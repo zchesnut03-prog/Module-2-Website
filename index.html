@@ -18,10 +18,12 @@
             </ul>
         </nav>
         <header>
-            <div>
+            <div class="row"> 
+            <div class="home__discription">
                 <h1>Best place to learn frontend</h1>
                 <p>Go from being an absoulte beginner to being a pro with a simplified process</p>
-                <button>Start Now</button>
+                <button class="home__description--button">Start Now</button>
+                </div>
                 <figure>
                     <img src="./assets/laptop.png" alt="Home page image">
                 </figure>
@@ -32,23 +34,31 @@
 <main>
     <section id="about"></section>
         <h2>About</h2>
-        <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <div class="row">
+        <div class="section__description">
+            <div class="section__description--wrapper">
+        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
         </div>
-        <figure>
+        <figure class="about__img--wrapper">
             <img src="./assets/about.jpg" alt="">
         </figure>
+        </div>
+        </div>
     </section>
 
     <section id="discord"></section>
     <h2>Discord</h2>
-    <figure>
+    <div class="row">
+    <div class="section__description">
+    <figure class="about__img--wrapper">
         <img src="./assets/discord.jpg" alt="Discord">
     </figure>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <div class="section__description--wrapper">
+        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        </div>
         </div>
     </section> 
 
@@ -56,21 +66,21 @@
     <h2>Contact</h2>
     <form action="">
         <label>Email</label>
-        <input type="text" placeholder="jane@example.com">
+        <input type="email" placeholder="jane@example.com">
         <label>Message</label>
-        <textarea type="text" placeholder="jane@example.com"></textarea>
-        <button type="submit">Send</button>
+        <textarea type="text" placeholder="Cool website, lets get connected!"></textarea>
+        <button>Contact Us!</button>
     </form>
     </section>
 </main>
 
 <footer>
-    <img src="./assets/FES.svg" alt="">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Courses</a>
+    <img class="footer__logo" src="./assets/FES.svg" alt="">
+    <div class="footer__links">
+        <a class="footer__links" href="#about">About</a>
+        <a class="footer__links" href="#discord">Discord</a>
+        <a class="footer__links" href="#contact">Contact</a>
+        <a class="footer__links" href="">Courses</a>
     </div>
     <p>Copyright Frontend Simplified</p>
 </footer>
